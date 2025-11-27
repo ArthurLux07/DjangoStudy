@@ -19,20 +19,22 @@
       </button>
 
       <div class="mt-5" style="max-width: 480px; margin: 0 auto;">
-        <div class="bg-dark text-white p-4 rounded-3 shadow-lg">
-          <h1 class="text-center mb-4 fw-bold">Fomulário</h1>
-          <div class="mb-3">
-            <label class="form-label">Nome completo:</label>
-            <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Ex: Maria Silva">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Idade:</label>
-            <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="25">
-          </div>
-          <div class="d-grid mt-4">
-            <button class="btn btn-primary w-25" >Enviar</button>
-          </div>
-        </div>
+        <form action="{% 'cadastro_usuario' %}" method="post">
+            <div class="bg-dark text-white p-4 rounded-3 shadow-lg">
+              <h1 class="text-center mb-4 fw-bold">Fomulário</h1>
+              <div class="mb-3">
+                <label class="form-label">Nome completo:</label>
+                <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Ex: Maria Silva">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Idade:</label>
+                <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="25">
+              </div>
+              <div class="d-grid mt-4">
+                <button class="btn btn-primary w-25" >Enviar</button>
+              </div>
+            </div>
+        </form>
       </div>
                       
 
