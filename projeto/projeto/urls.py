@@ -1,10 +1,7 @@
 from django.contrib import admin
-from django.urls import path
-from app.views import home
-from app import views
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('cadastro/', views.cadastro, name='lista_cadastro'),
+    path('', include('app.urls')),  # ← inclui as URLs da sua app
 ]

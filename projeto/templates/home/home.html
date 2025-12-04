@@ -12,7 +12,7 @@
   <body style="background-color: #121212;">
 
       <div class="mt-5" style="max-width: 480px; margin: 0 auto;">
-        <form action="{% url 'lista_cadastro' %}" method="post" class="mt-5" style="max-width: 480px; margin: 0 auto;">
+        <form action="{% url 'adicionar' %}" method="post" class="mt-5" style="max-width: 480px; margin: 0 auto;">
         {% csrf_token %}
           <div class="bg-dark text-white p-4 rounded-3 shadow-lg">
             <h1 class="text-center mb-4 fw-bold">Formulário</h1>
@@ -27,7 +27,7 @@
             </div>
 
             <div class="d-grid mt-4">
-              <button type="submit" class="btn btn-primary w-100">Enviar</button>
+              <button type="submit" class="btn btn-primary w-50 d-flex justify-content-center">Enviar</button>
             </div>
           </div>
         </form>
